@@ -16,5 +16,5 @@ app.get('/',function(req,res){
 });
 app.post('/', function(req,res){
        var a = req.body.email;
-        res.write(`${a}`);
+        res.send(`${a}`);
 });
