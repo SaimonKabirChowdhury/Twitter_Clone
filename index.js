@@ -14,5 +14,5 @@ app.get('/',function(req,res){
 });
 app.post('/', function(req,res){
     
-        res.send("<h1>+`${res.body}`+</h1>");
+        res.write("<h1>"+`${res.body}`+"</h1>");
 });
