@@ -12,3 +12,6 @@ app.get('/',function(req,res){
         __dirname + '/index.html'
     );
 });
+app.post('/', function(req,res){
+    res.write("<h1> Thanks for posting </h1>");
+});
