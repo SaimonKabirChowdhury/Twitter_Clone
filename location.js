@@ -1,4 +1,4 @@
-function getLocation (){
+function getLocation(){
 var x = document.getElementById("demo");
 if (navigator.geolocation){
     
