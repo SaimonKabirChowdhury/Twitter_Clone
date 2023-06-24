@@ -13,6 +13,6 @@ app.get('/',function(req,res){
     );
 });
 app.post('/', function(req,res){
-    
-        res.write(`${res.body}`);
+        
+        res.write(`${res.body.email}`);
 });
