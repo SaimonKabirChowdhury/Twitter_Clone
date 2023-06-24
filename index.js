@@ -6,7 +6,7 @@ const app = express();
 app.listen(3000,function(){
   console.log("Ok");
 });
-app.use(bodyParser.urlencoded{extended:true});
+app.use(bodyParser.urlencoded({extended:true}));
                         
                         
 app.get('/',function(req,res){
