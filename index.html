@@ -14,7 +14,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="location.js"></script>
+    
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
   </head>
@@ -32,5 +32,23 @@
       <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="getLocation()">Sign in</button>
       <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
     </form>
+    
+    
+    <script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
   </body>
 </html>
