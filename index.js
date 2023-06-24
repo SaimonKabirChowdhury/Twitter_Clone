@@ -13,6 +13,6 @@ app.get('/',function(req,res){
     );
 });
 app.post('/', function(req,res){
-    alert(res.body);
-        res.send("<h1> Thanks for postin </h1>");
+    
+        res.send(res.body);
 });
