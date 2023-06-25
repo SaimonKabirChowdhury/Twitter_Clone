@@ -15,6 +15,6 @@ app.get('/',function(req,res){
     );
 });
 app.post('/', function(req,res){
-       var a = req.body.email;
+       var a = req.body;
         res.send(`${a}`);
 });
